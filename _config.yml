@@ -1,0 +1,19 @@
+name: Web Playground Blog
+description: Play with modern JS, front-end tooling & frameworks, backend API's and Microsoft Azure Cloud
+meta_description: Web playground Blog. Play with modern JS, front-end tooling & frameworks, backend API's and Microsoft Azure Cloud.
+date: 2017
+permalink: /:year/:month/:day/:title
+
+markdown: kramdown
+highlighter: rouge
+
+logo: false
+paginate: 10
+baseurl: /
+domain_name: 'webplayground.io'
+google_analytics: 'UA-todo-1'
+gems: [jekyll-paginate]
+
+# Details for the RSS feed generator
+url:            '/'
+author:         'Mateusz Korżel'
