@@ -11,7 +11,7 @@ logo: false
 paginate: 10
 baseurl: /
 domain_name: 'webplayground.io'
-google_analytics: 'UA-todo-1'
+google_analytics: 'UA-89620501-1'
 gems: [jekyll-paginate]
 
 # Details for the RSS feed generator
