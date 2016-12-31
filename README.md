@@ -3,4 +3,4 @@
 > This is a source code for Web Playground Blog
 
 ## TODO
-- add comments count on index.html (layout defaults)
+- fixes for styles and code in fist sample post
