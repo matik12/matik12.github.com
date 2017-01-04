@@ -40,9 +40,6 @@ cover: '/images/cover.jpg'
         <header class="post-header">
             <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
         </header>
-        <section class="post-excerpt">
-            {{ post.excerpt }} <a class="read-more" href="{{ post.url }}">&raquo;</a>
-        </section>
         <footer class="post-meta">
             {% if site.author %}
                 <img class="author-thumb" src="/images/profile.png" alt="Author's profile picture" nopin="nopin" />
@@ -58,6 +55,12 @@ cover: '/images/cover.jpg'
                 <a href="{{ post.url }}#disqus_thread"></a>
             </div>
         </footer>
+        <section class="post-excerpt">
+            {{ post.excerpt }} 
+            <div class="center">
+                <a class="subscribe-button read-more" href="{{ post.url }}">Read more &raquo;</a>
+            </div>            
+        </section>
     </article>
 
     {% endfor %}
