@@ -1,6 +1,5 @@
 name: Web Playground Blog
 description: Play with modern JS, front-end tooling & frameworks, backend API's and Microsoft Azure Cloud
-meta_description: Web playground Blog. Play with modern JS, front-end tooling & frameworks, backend API's and Microsoft Azure Cloud.
 date: 2017
 permalink: /:year/:month/:day/:title
 
@@ -13,7 +12,7 @@ paginate: 10
 baseurl: ''
 domain_name: 'webplayground.io'
 google_analytics: 'UA-89620501-1'
-gems: [jekyll-paginate, jekyll-sitemap]
+gems: [jekyll-paginate, jekyll-sitemap, jekyll-seo-tag]
 
 # Details for the RSS feed generator
 url:            'http://www.webplayground.io'
