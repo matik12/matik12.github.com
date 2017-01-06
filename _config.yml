@@ -16,5 +16,5 @@ google_analytics: 'UA-89620501-1'
 gems: [jekyll-paginate, jekyll-sitemap]
 
 # Details for the RSS feed generator
-url:            'https://matik12.github.io'
+url:            'www.webplayground.io'
 author:         'Mateusz Korżel'
