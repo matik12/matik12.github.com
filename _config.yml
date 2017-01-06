@@ -16,5 +16,5 @@ google_analytics: 'UA-89620501-1'
 gems: [jekyll-paginate, jekyll-sitemap]
 
 # Details for the RSS feed generator
-url:            'www.webplayground.io'
+url:            'http://www.webplayground.io'
 author:         'Mateusz Korżel'
