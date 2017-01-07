@@ -23,13 +23,19 @@ post_class: post-template
             <section class="post-meta" style="margin-bottom:1em;">
 
                 {% if page.categories.size > 0 %}
-                    {{ page.categories | array_to_sentence_string | prepend: 'on ' }}
+                    {{ page.categories | array_to_sentence_string }}
                 {% endif %}
                 <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+                <div class="post-date">
+                    {{ page.content | reading_time_as_i }} read
+                </div>
+                <div class="post-date">
+                    <a href="{{ post.url }}#disqus_thread"></a>
+                </div>
             </section>
         </header>
 
-        <section class="post-content">
+        <section class="post-content padding-top">
             {{content}}
         </section>
 

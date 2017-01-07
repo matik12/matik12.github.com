@@ -8,11 +8,11 @@ highlighter: rouge
 excerpt_separator: <!--more-->
 
 logo: false
-paginate: 10
+paginate: 5
 baseurl: ''
 domain_name: 'webplayground.io'
 google_analytics: 'UA-89620501-1'
-gems: [jekyll-paginate, jekyll-sitemap, jekyll-seo-tag]
+gems: [jekyll-paginate, jekyll-sitemap, jekyll-seo-tag, jekyll-time-to-read]
 
 # Details for the RSS feed generator
 url:            'http://www.webplayground.io'

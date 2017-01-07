@@ -23,34 +23,29 @@ cover: '/images/cover.jpg'
             </h2>
         </div>
     </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-145"><span class="hidden">Scroll Down</span></a>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
 
 <main id="content" class="content" role="main">
-
-
-    <div class="extra-pagination inner">
-        {% include pagination.html %}
-    </div>
-
     {% for post in paginator.posts %}
 
     <article class="post">
         <header class="post-header">
-            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <h2 class="post-title">
+                <a href="{{ post.url }}">{{ post.title }}</a>                
+            </h2>            
         </header>
         <footer class="post-meta">
-            {% if site.author %}
-                <img class="author-thumb" src="/images/profile.png" alt="Author's profile picture" nopin="nopin" />
-                {{ site.author }}
-            {% endif %}
             {% if post.categories.size > 0 %}
-                {{ post.categories | array_to_sentence_string | prepend: 'on ' }}
+                {{ post.categories | array_to_sentence_string }}
             {% endif %}
             <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
                 {{ post.date | date_to_string }}
             </time>
+            <div class="post-date">
+                {{ post.content | reading_time_as_i }} read
+            </div>
             <div class="post-date">
                 <a href="{{ post.url }}#disqus_thread"></a>
             </div>
