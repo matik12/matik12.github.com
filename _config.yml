@@ -12,7 +12,7 @@ paginate: 5
 baseurl: ''
 domain_name: 'webplayground.io'
 google_analytics: 'UA-89620501-1'
-gems: [jekyll-paginate, jekyll-sitemap, jekyll-seo-tag, jekyll-time-to-read]
+gems: [jekyll-paginate, jekyll-sitemap, jekyll-seo-tag]
 
 # Details for the RSS feed generator
 url:            'http://www.webplayground.io'
