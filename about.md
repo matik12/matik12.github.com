@@ -10,4 +10,4 @@ Programming and designing software is my big passion. Every day I follow two sim
 
 What is more, I really enjoy playing table tennis, swimming or ballroom dancing. 
 
-I am [@matik12](https://github.com/matik12) on Github, and you can reach me at [mateusz.korzel@gmail.com](mateusz.korzel@gmail.com) or via [LinkedIn](https://uk.linkedin.com/in/mateusz-korzel).
+I am [@matik12](https://github.com/matik12) on Github, and you can reach me at <a href="mailto:mateusz.korzel@gmail.com">mateusz.korzel@gmail.com</a> or via [LinkedIn](https://uk.linkedin.com/in/mateusz-korzel).
