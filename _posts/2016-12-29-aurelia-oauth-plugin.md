@@ -25,15 +25,15 @@ This plugin implements only **OAuth implicit grant flow**, which is the recommen
 Obviously, you need to have installed [NodeJs](https://nodejs.org/) and [Gulp](http://gulpjs.com/). aurelia-oauth was based on [Aurelia plugin](https://github.com/aurelia/skeleton-plugin) and requires only standard Aurelia libraries. It's highly recommended to use JSPM for package managment.
 
 #### Installation
-```npm
+```js
 jspm install aurelia-oauth
 ```
 Using Npm:
-```npm
+```js
 npm install aurelia-oauth --save
 ```
 Using typescript you can install definitions:
-```npm
+```js
 typings install github:matik12/aurelia-oauth --save --global
 ```
 
