@@ -59,6 +59,32 @@
 
         $(".scroll-down").arctic_scroll();
 
+        var scrollbubble = $('#scrollbubble');
+        if (scrollbubble) {
+            var readTime = +scrollbubble.text();
+            var bubbleHideTimeout;
+
+            $(window).scroll(function() {
+                var allScroll = $(document).height();
+                var windowScroll = $(window).scrollTop();
+                var offset = 1000;
+                var pageEndText = 'Thanks for reading';
+                var minutesToRead = Math.round(((allScroll - windowScroll)/allScroll) * readTime);
+                var timeToReadText = minutesToRead + ' minute' + (minutesToRead > 1 ? 's' : '') + ' left';
+                var bubbleText = (allScroll - windowScroll) < offset ? pageEndText : timeToReadText;
+
+                scrollbubble.text(bubbleText);
+
+                if (windowScroll >= 50) {
+                    scrollbubble.fadeIn(500);     
+
+                    clearTimeout(bubbleHideTimeout);
+                    bubbleHideTimeout = setTimeout(function() { 
+                        scrollbubble.fadeOut(500); 
+                    }, 3000);                                 
+                }
+            });
+        }
     });
 
     // smartresize
