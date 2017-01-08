@@ -22,7 +22,7 @@ After some research I have done, I couldn't find a solution out of the box, so I
 
 #### Install dependencies
 
-To generate new file, we will add new gulp task. It has to npm package dependencies -> **fs**, **fs-tools**, so we will install it first.
+To generate new file, we will add new gulp task. It has two npm package dependencies -> **fs**, **fs-tools**, so we will install it first.
 
 ```js
 npm install fs fs-tools --save-dev
@@ -44,7 +44,7 @@ coverage: {
 }
 {% endhighlight %}
 
-Sometimes, you want to exclude files from coverage, because this code is inherited and you will likely not change it. For this case, you can use **excludePaths** array. Make sure, that instrumentation file path is included in karma.conf.js files array to run this file i.e. 'test/unit/all-modules.spec.ts' and files: ['test/unit/**/*.ts']. 
+Sometimes, you want to exclude files from coverage, because this code is inherited and you will likely not change it. For this case, you can use **excludePaths** array. Make sure, that instrumentation file path is included in karma.conf.js files array to run this file i.e. 'test/unit/all-modules.spec.ts' and files: ['test/unit/\*\*/\*.ts'].
 
 #### Create new gulp task
 

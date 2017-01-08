@@ -81,7 +81,7 @@
                     clearTimeout(bubbleHideTimeout);
                     bubbleHideTimeout = setTimeout(function() { 
                         scrollbubble.fadeOut(500); 
-                    }, 3000);                                 
+                    }, 2000);                                 
                 }
             });
         }
