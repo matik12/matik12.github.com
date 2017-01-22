@@ -55,7 +55,7 @@ jspm install npm:jquery@2.2.4
 'jspm_packages/npm/jquery@2.2.4/dist/jquery.min.js'
 {% endhighlight %}
 4. Install jquery typescript definitions if it's needed (add line to typings.json and run typings install)
-{% highlight javascript %}
+{% highlight json %}
 "globalDependencies": {
   "jquery": "registry:dt/jquery#1.10.0+20160929162922"
 }

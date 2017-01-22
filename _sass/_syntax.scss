@@ -36,7 +36,7 @@
 	.ne { color: #990000; font-weight: bold } /* Name.Exception */
 	.nf { color: #990000; font-weight: bold } /* Name.Function */
 	.nn { color: #555555 } /* Name.Namespace */
-	.nt { color: #2568CA } /* Name.Tag */
+	.nt { color: #569CD6 } /* Name.Tag */
 	.nv { color: #008080 } /* Name.Variable */
 	.ow { font-weight: bold } /* Operator.Word */
 	.w { color: #bbbbbb } /* Text.Whitespace */
@@ -63,6 +63,18 @@
 	.p { color: white; }
 	.nx { color: #9CDCFE; }
 	.nl { color: #9CDCFE; }
-	.language-shell { color: white; }
+	.language-shell { color: #9CDCFE; }
+	.language-json {
+		.nt { color: #9CDCFE; }
+	}
+
+	::-moz-selection {
+		background: #3A3D41;
+	}
+
+	::selection {
+		background: #3A3D41;
+	}
 }
+
 
