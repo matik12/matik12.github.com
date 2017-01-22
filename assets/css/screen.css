@@ -1667,7 +1667,7 @@ body:not(.post-template) .post-title {
         padding: 0;
     }
 
-    .post-content .full-img {
+    .post-content .full-img, .post-excerpt .full-img {
         width: auto;
         width: calc(100% + 32px); /* expand with to image + margins */
         margin: 0 -16px; /* get rid of margins */
