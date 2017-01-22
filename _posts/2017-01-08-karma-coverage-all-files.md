@@ -24,9 +24,9 @@ After some research I have done, I couldn't find a solution out of the box, so I
 
 To generate new file, we will add new gulp task. It has two npm package dependencies -> **fs**, **fs-tools**, so we will install it first.
 
-```js
+{% highlight shell %}
 npm install fs fs-tools --save-dev
-```
+{% endhighlight %}
 
 #### Define path variables
 
