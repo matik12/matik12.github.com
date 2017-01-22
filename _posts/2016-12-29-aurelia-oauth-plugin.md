@@ -25,17 +25,17 @@ This plugin implements only **OAuth implicit grant flow**, which is the recommen
 Obviously, you need to have installed [NodeJs](https://nodejs.org/) and [Gulp](http://gulpjs.com/). aurelia-oauth was based on [Aurelia plugin](https://github.com/aurelia/skeleton-plugin) and requires only standard Aurelia libraries. It's highly recommended to use JSPM for package managment.
 
 #### Installation
-```js
+{% highlight shell %}
 jspm install aurelia-oauth
-```
+{% endhighlight %}
 Using Npm:
-```js
+{% highlight shell %}
 npm install aurelia-oauth --save
-```
+{% endhighlight %}
 Using typescript you can install definitions:
-```js
+{% highlight shell %}
 typings install github:matik12/aurelia-oauth --save --global
-```
+{% endhighlight %}
 
 ### Usage guide
 
@@ -59,7 +59,7 @@ function configureOauth(oauthService: IOAuthConfig) {
     {
       loginUrl: 'https://login.microsoftonline.com/{tenantId}/oauth2/authorize',
       logoutUrl: 'https://login.microsoftonline.com/{tenantId}/oauth2/authorize',
-	  clientId: '{clientId}',
+      clientId: '{clientId}',
       alwaysRequireLogin: true
     });
 }
