@@ -5,21 +5,23 @@ categories: [OAuth, Aurelia, Plugins, JS, Typescript, HttpClient]
 disqus: true
 ---
 
+![Aurelia](/images/2016-12-29/aurelia.png)
+
 Why authorization plugin is helpful?
 
 aurelia-oauth is a plugin for [Aurelia](http://aurelia.io/) to provide support of user authorization using OAuth 2.0 Authorization Framework. [Here](https://matik12.github.io/aurelia-basic-app-skeleton/) you can find **live demo** using Google API setup.
 
 aurelia-oauth has very similar functionality as [ADALjs library](https://github.com/AzureAD/azure-activedirectory-library-for-js) and can be easily configured to integrate with OAuth2 APIs such as Azure Active Directory, Google etc.
 
-aurelia-oauth plugin automatically uses 'Bearer' JWT (JSON WEB TOKEN) tokens to send requests to secured APIs by adding Authorization header. The underlying token is **never stored** on the client due to sensitive data security. Use this page - [JWT](https://jwt.io/) to decode tokens and investigate claims.   
-
 <!--more-->
 
-![Authentication header](/images/jwt_token.png)
+aurelia-oauth plugin automatically uses 'Bearer' JWT (JSON WEB TOKEN) tokens to send requests to secured APIs by adding Authorization header. The underlying token is **never stored** on the client due to sensitive data security. Use this page - [JWT](https://jwt.io/) to decode tokens and investigate claims.  
+
+![Authentication header](/images/2016-12-29/jwt_token.png)
 
 This plugin implements only **OAuth implicit grant flow**, which is the recommended approach for both client side SPA applications and mobile apps. In this case, application does not need to supply login page and can leverage external login page with Single Sign-On. Plugin relies on simple page redirects(**no popups!**) and therefore can be seamlessly used on mobile devices. Animation below shows plugin and its flow in action.
 
-<img src="/images/oauth_flow.gif" alt="OAuth Implicit Grant Flow" style="width: 800px; margin: 0;">
+<img src="/images/2016-12-29/oauth_flow.gif" alt="OAuth Implicit Grant Flow" style="width: 800px; margin: 0;">
 
 ### Installation prerequisites
 Obviously, you need to have installed [NodeJs](https://nodejs.org/) and [Gulp](http://gulpjs.com/). aurelia-oauth was based on [Aurelia plugin](https://github.com/aurelia/skeleton-plugin) and requires only standard Aurelia libraries. It's highly recommended to use JSPM for package managment.
