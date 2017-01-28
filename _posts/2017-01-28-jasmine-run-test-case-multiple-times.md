@@ -57,7 +57,7 @@ describe('Test case example', () => {
 
 You can see the result of running the code above using **karma** and **mocha reporter**. As you can notice, each test case is run separately and report the input data that was provided to test particular scenario.
 
-![Sample test case result](/images/2017-01-28/sample-test-case.png)
+![Sample test case result](/images/2017-01-28/sample-test-case.PNG)
 
 ### Summary
 
