@@ -40,29 +40,36 @@ Recently, I have created simple project using Aurelia to show how to build curre
 	- updated .gitignore to exclude coverage reports and traspiled unit tests
 6. Configured default build task (watch) for Visual Studio Code and debugging js code in Visual Studio Code via Chrome browser. 
 
-**Note**: Bootstrap & jquery bundle/minification issue is resolved in the next commit shown in simple-aurelia-app repo. The clean setup does not include jquery dependency, only bootstrap sass (js is not imported in the code). To include jquery and boostrap.js follow these steps:
+**Note (see an update below!)**: Bootstrap & jquery bundle/minification issue is resolved in the next commit shown in simple-aurelia-app repo. The clean setup does not include jquery dependency, only bootstrap sass (js is not imported in the code). To include jquery and boostrap.js follow these steps:
 
-1. Install jquery (check package.json file after installation and remove '^' from npm:jquery@^2.2.4 if this will be added by jspm)
+1\. Install jquery (check package.json file after installation and remove '^' from npm:jquery@^2.2.4 if this will be added by jspm)
 {% highlight shell %}
 jspm install npm:jquery@2.2.4
 {% endhighlight %}
-2. Add script tag in the index.html after meta tag in head
+2\. Add script tag in the index.html after meta tag in head
 {% highlight html %}
 <script src="jspm_packages/npm/jquery@2.2.4/dist/jquery.min.js"></script>
 {% endhighlight %}
-3. Add jquery path to exported files list in export.js
+3\. Add jquery path to exported files list in export.js
 {% highlight javascript %}
 'jspm_packages/npm/jquery@2.2.4/dist/jquery.min.js'
 {% endhighlight %}
-4. Install jquery typescript definitions if it's needed (add line to typings.json and run typings install)
+4\. Install jquery typescript definitions if it's needed (add line to typings.json and run typings install)
 {% highlight json %}
 "globalDependencies": {
   "jquery": "registry:dt/jquery#1.10.0+20160929162922"
 }
 {% endhighlight %}
-5. Add **import 'jquery';** in test/unit/setup.ts
-5. Add **import 'bootstrap-sass';** in main.ts file before Aurelia import
-6. Add **"bootstrap-sass"** to bundles.js files - include it in bundle with libraries
+5\. Add **import 'jquery';** in test/unit/setup.ts <br/>
+6\. Add **import 'bootstrap-sass';** in main.ts file before Aurelia import <br/>
+7\. Add **"bootstrap-sass"** to bundles.js files - include it in bundle with libraries
+
+**Update on bundling issue**: the minification issue no longer exists, so you can simply import jquery in your code and the bundler will work out how to properly bundle dependencies. According to the steps from the note above, these are the changes:
+
+- Ad 2. Don't need to add script tag for jquery any more, instead of that add **import 'jquery';** in main.ts file as a first import statement
+- Ad 3. Don't need to add jquery to exported file paths in export.js, but add **"jquery"** to bundles.js files - include it in bundle with libraries before bootstrap
+- Ad 4. Install jquery definitions, so you can simply import module in typescript
+- Ad 6. & 7. Remember to import/bundle bootstrap **after** jquery!
 
 ### Summary
 
